@@ -27,6 +27,10 @@ Replace the '******' in `.env` with their corresponding keys.
 Set your redirect_uri to `http://localhost:4567/oauth/callback`
 in the dev panel on Instagram.
 
+It should look like this while in development:
+
+![alt text](https://s3-us-west-2.amazonaws.com/instascrape/instaexample.png "Example Image")
+
 Back in the console:
 ```
 ruby insta.rb
