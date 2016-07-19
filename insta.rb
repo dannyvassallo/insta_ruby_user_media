@@ -33,7 +33,7 @@ get "/user_recent_media" do
   html << "<a href='/logout'>Log Out</a>"
   for media_item in client.user_recent_media
     if media_item.type === "video"
-      html << "<div style='float:left;'><a href='#{media_item.link}' target='_blank'><img src='#{media_item.images.thumbnail.url}'></a><br/> <a href='/media_like/#{media_item.id}'>Like</a>  <a href='/media_unlike/#{media_item.id}'>Un-Like</a>  <br/>LikesCount=#{media_item.likes[:count]}</div><p>#{media_item}</p>"
+      html << "<div style='float:left;'><a href='#{media_item.videos.standard_resolution.url}' target='_blank'><img src='#{media_item.images.thumbnail.url}'></a>"
     end
   end
   html
