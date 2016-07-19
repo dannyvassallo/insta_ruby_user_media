@@ -22,6 +22,8 @@ On the web:
 
 Goto [Instagram Developers](https://www.instagram.com/developer/) and get the appropriate keys.
 
+Replace the '******' in `.env` with their corresponding keys.
+
 Set your redirect_uri to `http://localhost:4567/oauth/callback`
 in the dev panel on Instagram.
 
